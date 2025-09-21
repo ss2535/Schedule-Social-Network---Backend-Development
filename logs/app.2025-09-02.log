@@ -1,0 +1,2449 @@
+2025-09-02 17:51:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-09-02 17:51:50 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Starting ScheduleNetworkVersion2Application using Java 21.0.3 with PID 4900 (C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2\target\classes started by Pc-Baran in C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2)
+2025-09-02 17:51:50 [restartedMain] DEBUG c.s.s.ScheduleNetworkVersion2Application - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-09-02 17:51:50 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - No active profile set, falling back to 1 default profile: "default"
+2025-09-02 17:51:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-02 17:51:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-02 17:51:52 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-02 17:51:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 253 ms. Found 13 JPA repository interfaces.
+2025-09-02 17:51:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-02 17:51:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-02 17:51:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-02 17:51:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-09-02 17:51:54 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-02 17:51:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4382 ms
+2025-09-02 17:51:55 [restartedMain] DEBUG c.s.s.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-09-02 17:51:55 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-02 17:51:55 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-09-02 17:51:55 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-09-02 17:51:56 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-02 17:51:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-09-02 17:51:56 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@45e2f3b0
+2025-09-02 17:51:56 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-09-02 17:51:56 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-02 17:51:56 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-02 17:51:59 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-02 17:52:00 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 17:52:01 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-02 17:52:05 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-09-02 17:52:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-02 17:52:06 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-09-02 17:52:06 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-09-02 17:52:06 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-09-02 17:52:06 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-02 17:52:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-02 17:52:06 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Started ScheduleNetworkVersion2Application in 17.64 seconds (process running for 19.406)
+2025-09-02 17:52:06 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) 
+    from
+        role r1_0
+2025-09-02 17:52:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-02 17:52:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-02 17:52:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2025-09-02 17:52:14 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2025-09-02 17:52:14 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-02 17:52:14 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui.html
+2025-09-02 17:52:14 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-09-02 17:52:14 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-02 17:52:14 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-09-02 17:52:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-09-02 17:52:17 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-02 17:52:17 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-09-02 17:52:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/public
+2025-09-02 17:52:17 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-02 17:52:17 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/public
+2025-09-02 17:52:20 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 3049 ms
+2025-09-02 17:52:40 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-09-02 17:52:40 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-09-02 17:52:40 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-09-02 17:52:40 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  admin020 شروع فرایند لاگین برای کاربر 
+2025-09-02 17:52:41 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 17:52:41 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 17:52:41 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 17:52:41 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 17:52:41 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-09-02 17:52:41 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - admin020: جستجوی کاربر با نام کاربری 
+2025-09-02 17:52:41 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: admin020
+2025-09-02 17:52:41 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 17:52:41 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 17:52:41 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  کاربر admin020 با موفقیت وارد سیستم شد 
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/range?startDate=2025-09-01&endDate=2025-09-03
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/range?startDate=2025-09-01&endDate=2025-09-03
+2025-09-02 17:53:31 [http-nio-8080-exec-7] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع دریافت فعالیت های شخصی 
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.user_table_id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and a1_0.end_date>=?
+            )
+        ) 
+    order by
+        wd1_0.id,
+        a1_0.start_time
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-03]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-03]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-09-01]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-09-03]
+2025-09-02 17:53:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-09-02 17:53:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/activity/personal/84
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/activity/personal/84
+2025-09-02 17:56:05 [http-nio-8080-exec-9] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع ویرایش فعالیت شخصی برای کاربر 
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        g1_0.id,
+        g1_0.access_level_id,
+        al2_0.id,
+        al2_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name,
+        a1_0.location,
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s2_0.id,
+        s2_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    left join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    left join
+        access_level al2_0 
+            on al2_0.id=g1_0.access_level_id 
+    left join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    left join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    join
+        status s2_0 
+            on s2_0.id=a1_0.status_id 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    where
+        a1_0.id=?
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [84]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        activity 
+    set
+        access_level_id=?,
+        activity_type_id=?,
+        description=?,
+        end_date=?,
+        end_time=?,
+        group_table_id=?,
+        location=?,
+        schedule_id=?,
+        start_date=?,
+        start_time=?,
+        status_id=?,
+        title=?,
+        week_day_id=? 
+    where
+        id=?
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [کلاس]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIME) <- [21:30]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [null]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [آموزشگاه]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:BIGINT) <- [14]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:DATE) <- [2025-09-01]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:TIME) <- [17:30]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:BIGINT) <- [1]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (12:VARCHAR) <- [کلاسicdl]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (13:BIGINT) <- [2]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (14:BIGINT) <- [84]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.id=? 
+        and a1_0.id<>? 
+        and (
+            a1_0.start_date<=cast(? as date) 
+            or cast(? as date) is null
+        ) 
+        and (
+            a1_0.end_date is null 
+            or a1_0.end_date>=?
+        ) 
+        and (
+            (
+                a1_0.start_time<=? 
+                and a1_0.end_time>=?
+            ) 
+            or (
+                a1_0.start_time>=? 
+                and a1_0.start_time<?
+            )
+        )
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [14]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [84]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-01]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIME) <- [21:30]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIME) <- [17:30]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:TIME) <- [17:30]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:TIME) <- [21:30]
+2025-09-02 17:56:05 [http-nio-8080-exec-9] INFO  c.s.s.s.impl.ActivityServiceImpl -  فعالیت شخصی با شناسه null با موفقیت به روزرسانی شد 
+2025-09-02 18:02:44 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/activity/personal/84
+2025-09-02 18:02:44 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/activity/personal/84
+2025-09-02 18:02:44 [http-nio-8080-exec-1] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع ویرایش فعالیت شخصی برای کاربر 
+2025-09-02 18:02:44 [http-nio-8080-exec-1] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:02:44 [http-nio-8080-exec-1] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:02:44 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:02:44 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        g1_0.id,
+        g1_0.access_level_id,
+        al2_0.id,
+        al2_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name,
+        a1_0.location,
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s2_0.id,
+        s2_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    left join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    left join
+        access_level al2_0 
+            on al2_0.id=g1_0.access_level_id 
+    left join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    left join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    join
+        status s2_0 
+            on s2_0.id=a1_0.status_id 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    where
+        a1_0.id=?
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [84]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    update
+        activity 
+    set
+        access_level_id=?,
+        activity_type_id=?,
+        description=?,
+        end_date=?,
+        end_time=?,
+        group_table_id=?,
+        location=?,
+        schedule_id=?,
+        start_date=?,
+        start_time=?,
+        status_id=?,
+        title=?,
+        week_day_id=? 
+    where
+        id=?
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [کلاس]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIME) <- [21:30]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [null]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [آموزشگاه]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:BIGINT) <- [14]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:DATE) <- [2025-09-01]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:TIME) <- [17:45]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:BIGINT) <- [1]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (12:VARCHAR) <- [کلاسicdl]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (13:BIGINT) <- [2]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (14:BIGINT) <- [84]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.id=? 
+        and a1_0.id<>? 
+        and (
+            a1_0.start_date<=cast(? as date) 
+            or cast(? as date) is null
+        ) 
+        and (
+            a1_0.end_date is null 
+            or a1_0.end_date>=?
+        ) 
+        and (
+            (
+                a1_0.start_time<=? 
+                and a1_0.end_time>=?
+            ) 
+            or (
+                a1_0.start_time>=? 
+                and a1_0.start_time<?
+            )
+        )
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [14]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [84]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-01]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIME) <- [21:30]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIME) <- [17:45]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:TIME) <- [17:45]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:TIME) <- [21:30]
+2025-09-02 18:02:45 [http-nio-8080-exec-1] INFO  c.s.s.s.impl.ActivityServiceImpl -  فعالیت شخصی با شناسه null با موفقیت به روزرسانی شد 
+2025-09-02 18:04:25 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/activity/personal
+2025-09-02 18:04:25 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/activity/personal
+2025-09-02 18:04:26 [http-nio-8080-exec-3] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع اضافه کردن فعالیت شخصی برای کاربر 
+2025-09-02 18:04:26 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:04:26 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:04:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=?
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.id=? 
+        and (
+            a1_0.start_date<=cast(? as date) 
+            or cast(? as date) is null
+        ) 
+        and (
+            a1_0.end_date is null 
+            or a1_0.end_date>=?
+        ) 
+        and (
+            (
+                a1_0.start_time<=? 
+                and a1_0.end_time>=?
+            ) 
+            or (
+                a1_0.start_time>=? 
+                and a1_0.start_time<?
+            )
+        )
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [14]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIME) <- [21:30]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIME) <- [18:45]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIME) <- [18:45]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:TIME) <- [21:30]
+2025-09-02 18:04:26 [http-nio-8080-exec-3] WARN  c.s.s.s.impl.ActivityServiceImpl -  تداخل زمانی برای کاربر admin020 با فعالیت های موجود 
+2025-09-02 18:04:26 [http-nio-8080-exec-3] ERROR c.s.s.e.GlobalExceptionHandler - خطای اعتبارسنجی:  تداخل زمانی با فعالیت های موجود وجود دارد
+com.scheduleNetwork_version2.scheduleNetwork_version2.exception.ValidationException:  تداخل زمانی با فعالیت های موجود وجود دارد
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.ActivityServiceImpl.addPersonalActivity(ActivityServiceImpl.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.ActivityServiceImpl$$SpringCGLIB$$0.addPersonalActivity(<generated>)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.controller.ActivityController.addPersonalActivity(ActivityController.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-02 18:04:26 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.scheduleNetwork_version2.scheduleNetwork_version2.exception.ValidationException:  تداخل زمانی با فعالیت های موجود وجود دارد]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/activity/personal
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/activity/personal
+2025-09-02 18:04:42 [http-nio-8080-exec-4] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع اضافه کردن فعالیت شخصی برای کاربر 
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=?
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.id=? 
+        and (
+            a1_0.start_date<=cast(? as date) 
+            or cast(? as date) is null
+        ) 
+        and (
+            a1_0.end_date is null 
+            or a1_0.end_date>=?
+        ) 
+        and (
+            (
+                a1_0.start_time<=? 
+                and a1_0.end_time>=?
+            ) 
+            or (
+                a1_0.start_time>=? 
+                and a1_0.start_time<?
+            )
+        )
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [14]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIME) <- [21:30]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIME) <- [17:55]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:TIME) <- [17:55]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:TIME) <- [21:30]
+2025-09-02 18:04:42 [http-nio-8080-exec-4] WARN  c.s.s.s.impl.ActivityServiceImpl -  تداخل زمانی برای کاربر admin020 با فعالیت های موجود 
+2025-09-02 18:04:42 [http-nio-8080-exec-4] ERROR c.s.s.e.GlobalExceptionHandler - خطای اعتبارسنجی:  تداخل زمانی با فعالیت های موجود وجود دارد
+com.scheduleNetwork_version2.scheduleNetwork_version2.exception.ValidationException:  تداخل زمانی با فعالیت های موجود وجود دارد
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.ActivityServiceImpl.addPersonalActivity(ActivityServiceImpl.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.ActivityServiceImpl$$SpringCGLIB$$0.addPersonalActivity(<generated>)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.controller.ActivityController.addPersonalActivity(ActivityController.java:33)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-09-02 18:04:42 [http-nio-8080-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.scheduleNetwork_version2.scheduleNetwork_version2.exception.ValidationException:  تداخل زمانی با فعالیت های موجود وجود دارد]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/range?startDate=2025-09-01&endDate=2025-09-03
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/range?startDate=2025-09-01&endDate=2025-09-03
+2025-09-02 18:05:25 [http-nio-8080-exec-5] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع دریافت فعالیت های شخصی 
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.user_table_id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and a1_0.end_date>=?
+            )
+        ) 
+    order by
+        wd1_0.id,
+        a1_0.start_time
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-03]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-03]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-09-01]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-09-03]
+2025-09-02 18:05:25 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-09-02 18:05:25 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/activity/group/75
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured PUT /api/activity/group/75
+2025-09-02 18:08:31 [http-nio-8080-exec-7] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع ویرایش فعالیت گروهی با شناسه 75 برای گروه 11
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+join
+    role r1_0 
+        on r1_0.id=gm1_0.role_id 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=? 
+    and r1_0.title=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [ROLE_ADMIN]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        g1_0.id,
+        g1_0.access_level_id,
+        al2_0.id,
+        al2_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name,
+        a1_0.location,
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s2_0.id,
+        s2_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    left join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    left join
+        access_level al2_0 
+            on al2_0.id=g1_0.access_level_id 
+    left join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    left join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    join
+        status s2_0 
+            on s2_0.id=a1_0.status_id 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    where
+        a1_0.id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [75]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        wd1_0.id,
+        wd1_0.title 
+    from
+        week_day wd1_0 
+    where
+        wd1_0.id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.title 
+    from
+        status s1_0 
+    where
+        s1_0.id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        at1_0.id,
+        at1_0.title 
+    from
+        activity_type at1_0 
+    where
+        at1_0.id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    update
+        activity 
+    set
+        access_level_id=?,
+        activity_type_id=?,
+        description=?,
+        end_date=?,
+        end_time=?,
+        group_table_id=?,
+        location=?,
+        schedule_id=?,
+        start_date=?,
+        start_time=?,
+        status_id=?,
+        title=?,
+        week_day_id=? 
+    where
+        id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:VARCHAR) <- [تمرین برای امتحان سیگنال]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [null]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIME) <- [16:30]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [دانشگاه]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:BIGINT) <- [null]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:DATE) <- [2025-09-01]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:TIME) <- [14:00]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (12:VARCHAR) <- [امتحان سیگنال سیستم ]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (13:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (14:BIGINT) <- [75]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.id,
+        a1_0.access_level_id,
+        a1_0.activity_type_id,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        a1_0.schedule_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        a1_0.title,
+        a1_0.week_day_id 
+    from
+        activity a1_0 
+    where
+        a1_0.group_table_id=? 
+        and a1_0.schedule_id is not null
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.id=?
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [15]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌های کپی‌شده برای گروه 11: 2
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG c.s.s.s.impl.ActivityServiceImpl - به‌روزرسانی فعالیت‌های کپی‌شده برای گروه 11 با مقادیر جدید: title=امتحان سیگنال سیستم , startDate=2025-09-01, endDate=null, startTime=14:00, endTime=16:30
+2025-09-02 18:08:31 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    UPDATE
+        activity a 
+    SET
+        title = ?,
+        description = ?,
+        start_date = ?,
+        end_date = ?,
+        start_time = ?,
+        end_time = ?,
+        location = ?,
+        week_day_id = ?,
+        status_id = ?,
+        activity_type_id = ?,
+        access_level_id = ? 
+    WHERE
+        a.group_table_id = ? 
+        AND a.schedule_id IS NOT NULL
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [امتحان سیگنال سیستم ]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [تمرین برای امتحان سیگنال]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [null]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:TIME) <- [14:00]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:TIME) <- [16:30]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:VARCHAR) <- [دانشگاه]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:BIGINT) <- [2]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (12:BIGINT) <- [11]
+2025-09-02 18:08:31 [http-nio-8080-exec-7] INFO  c.s.s.s.impl.ActivityServiceImpl - تعداد 2 فعالیت کپی‌شده برای گروه 11 به‌روزرسانی شد
+2025-09-02 18:08:31 [http-nio-8080-exec-7] INFO  c.s.s.s.impl.ActivityServiceImpl - فعالیت گروهی با شناسه 75 برای گروه 11 با موفقیت به‌روزرسانی شد
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/report?date=2025-09-01
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/report?date=2025-09-01
+2025-09-02 18:20:43 [http-nio-8080-exec-9] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های شخصی برای تاریخ 2025-09-01
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:20:43 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time 
+    from
+        activity a1_0 
+    join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=? 
+        and (
+            a1_0.start_date=? 
+            or a1_0.end_date=? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        a1_0.start_time
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:20:43 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-01]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/report?date=2025-09-02
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/report?date=2025-09-02
+2025-09-02 18:22:41 [http-nio-8080-exec-1] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های شخصی برای تاریخ 2025-09-02
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time 
+    from
+        activity a1_0 
+    join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=? 
+        and (
+            a1_0.start_date=? 
+            or a1_0.end_date=? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        a1_0.start_time
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-02]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-02]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-02]
+2025-09-02 18:22:41 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-02]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/report/range?startDate=2025-09-03&endDate=2025-09-03
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/report/range?startDate=2025-09-03&endDate=2025-09-03
+2025-09-02 18:24:33 [http-nio-8080-exec-3] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های شخصی برای بازه 2025-09-03 تا 2025-09-03
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time,
+        a1_0.start_date 
+    from
+        activity a1_0 
+    join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        a1_0.start_time
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-03]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-03]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-03]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-03]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-09-03]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-09-03]
+2025-09-02 18:24:33 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌ها: 1, کل ساعات: 2.5, میانگین روزانه: 0.0, فعال‌ترین روز: 2025-09-01
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/report?date=2025-09-01
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/report?date=2025-09-01
+2025-09-02 18:26:15 [http-nio-8080-exec-5] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های گروهی برای گروه 11 و تاریخ 2025-09-01
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [11]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time 
+    from
+        activity a1_0 
+    join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    where
+        g1_0.id=? 
+        and (
+            a1_0.start_date=? 
+            or a1_0.end_date=? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+        and g1_0.id is not null 
+        and a1_0.schedule_id is null 
+    order by
+        a1_0.start_time
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-01]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:26:15 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-01]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/report/range?startDate=2025-09-01&endDate=2025-09-03
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/report/range?startDate=2025-09-01&endDate=2025-09-03
+2025-09-02 18:26:35 [http-nio-8080-exec-6] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های گروهی برای گروه 11 و بازه 2025-09-01 تا 2025-09-03
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin020: نام کاربری استخراج شده 
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin020]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [42]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [11]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time,
+        a1_0.start_date 
+    from
+        activity a1_0 
+    join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    where
+        g1_0.id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+        and g1_0.id is not null 
+        and a1_0.schedule_id is null 
+    order by
+        a1_0.start_time
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [11]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-09-01]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-03]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-09-01]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-03]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-09-03]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-09-01]
+2025-09-02 18:26:35 [http-nio-8080-exec-6] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌ها: 1, کل ساعات: 2.5, میانگین روزانه: 1.25, فعال‌ترین روز: 2025-09-01
+2025-09-02 18:27:05 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-02 18:27:05 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-02 18:27:05 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-02 18:27:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-09-02 18:27:05 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

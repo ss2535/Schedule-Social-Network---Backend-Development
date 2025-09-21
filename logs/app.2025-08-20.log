@@ -1,0 +1,711 @@
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/report?date=2025-08-22
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/report?date=2025-08-22
+2025-08-20 00:00:11 [http-nio-8080-exec-8] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های شخصی برای تاریخ 2025-08-22
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:00:11 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time 
+    from
+        activity a1_0 
+    join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=? 
+        and (
+            a1_0.start_date=? 
+            or a1_0.end_date=? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        a1_0.start_time
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-08-22]
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-22]
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-08-22]
+2025-08-20 00:00:11 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/report/range?startDate=2025-08-22&endDate=2025-08-22
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/report/range?startDate=2025-08-22&endDate=2025-08-22
+2025-08-20 00:00:18 [http-nio-8080-exec-9] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های شخصی برای بازه 2025-08-22 تا 2025-08-22
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time,
+        a1_0.start_date 
+    from
+        activity a1_0 
+    join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        a1_0.start_time
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-08-22]
+2025-08-20 00:00:18 [http-nio-8080-exec-9] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌ها: 2, کل ساعات: 2.0, میانگین روزانه: 0.0, فعال‌ترین روز: 2025-08-22
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/report/range?startDate=2025-08-01&endDate=2025-08-30
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/report/range?startDate=2025-08-01&endDate=2025-08-30
+2025-08-20 00:00:40 [http-nio-8080-exec-10] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های شخصی برای بازه 2025-08-01 تا 2025-08-30
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time,
+        a1_0.start_date 
+    from
+        activity a1_0 
+    join
+        schedule s1_0 
+            on s1_0.id=a1_0.schedule_id 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    where
+        u1_0.id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        a1_0.start_time
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-08-01]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-30]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-08-01]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-30]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-08-30]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-08-01]
+2025-08-20 00:00:40 [http-nio-8080-exec-10] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌ها: 3, کل ساعات: 10.0, میانگین روزانه: 0.3448275862068966, فعال‌ترین روز: 2025-08-19
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/report?date=2025-08-22
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/report?date=2025-08-22
+2025-08-20 00:01:22 [http-nio-8080-exec-1] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های گروهی برای گروه 10 و تاریخ 2025-08-22
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [10]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time 
+    from
+        activity a1_0 
+    join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    where
+        g1_0.id=? 
+        and (
+            a1_0.start_date=? 
+            or a1_0.end_date=? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+        and g1_0.id is not null 
+        and a1_0.schedule_id is null 
+    order by
+        a1_0.start_time
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-08-22]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-22]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-08-22]
+2025-08-20 00:01:22 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/report/range?startDate=2025-08-22&endDate=2025-08-22
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/report/range?startDate=2025-08-22&endDate=2025-08-22
+2025-08-20 00:01:32 [http-nio-8080-exec-2] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های گروهی برای گروه 10 و بازه 2025-08-22 تا 2025-08-22
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [10]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time,
+        a1_0.start_date 
+    from
+        activity a1_0 
+    join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    where
+        g1_0.id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+        and g1_0.id is not null 
+        and a1_0.schedule_id is null 
+    order by
+        a1_0.start_time
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-08-22]
+2025-08-20 00:01:32 [http-nio-8080-exec-2] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌ها: 2, کل ساعات: 2.0, میانگین روزانه: 0.0, فعال‌ترین روز: 2025-08-22
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/report/range?startDate=2025-08-01&endDate=2025-08-30
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/report/range?startDate=2025-08-01&endDate=2025-08-30
+2025-08-20 00:01:44 [http-nio-8080-exec-3] INFO  c.s.s.s.impl.ActivityServiceImpl - شروع دریافت گزارش فعالیت‌های گروهی برای گروه 10 و بازه 2025-08-01 تا 2025-08-30
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [10]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.title,
+        a1_0.start_time,
+        a1_0.end_time,
+        a1_0.start_date 
+    from
+        activity a1_0 
+    join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    where
+        g1_0.id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+        and g1_0.id is not null 
+        and a1_0.schedule_id is null 
+    order by
+        a1_0.start_time
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-08-01]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-30]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-08-01]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-30]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-08-30]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-08-01]
+2025-08-20 00:01:44 [http-nio-8080-exec-3] DEBUG c.s.s.s.impl.ActivityServiceImpl - تعداد فعالیت‌ها: 2, کل ساعات: 2.0, میانگین روزانه: 0.06896551724137931, فعال‌ترین روز: 2025-08-22
+2025-08-20 00:01:57 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-20 00:01:57 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-20 00:01:57 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-20 00:01:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-20 00:01:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,2688 @@
+2025-08-27 09:08:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-27 09:08:10 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Starting ScheduleNetworkVersion2Application using Java 21.0.3 with PID 1532 (C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2\target\classes started by Pc-Baran in C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2)
+2025-08-27 09:08:10 [restartedMain] DEBUG c.s.s.ScheduleNetworkVersion2Application - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-27 09:08:10 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-27 09:08:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-27 09:08:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-27 09:08:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-27 09:08:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 180 ms. Found 13 JPA repository interfaces.
+2025-08-27 09:08:15 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-27 09:08:15 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-27 09:08:15 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-27 09:08:15 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-27 09:08:15 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-27 09:08:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4424 ms
+2025-08-27 09:08:15 [restartedMain] DEBUG c.s.s.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-27 09:08:16 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-27 09:08:16 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-08-27 09:08:16 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-27 09:08:16 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-27 09:08:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-27 09:08:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@35c24dae
+2025-08-27 09:08:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-27 09:08:17 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-27 09:08:17 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-27 09:08:19 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-27 09:08:21 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27 09:08:21 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-27 09:08:25 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-27 09:08:26 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-27 09:08:26 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-27 09:08:27 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-27 09:08:27 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-27 09:08:27 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-27 09:08:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-27 09:08:27 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Started ScheduleNetworkVersion2Application in 18.197 seconds (process running for 19.35)
+2025-08-27 09:08:28 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) 
+    from
+        role r1_0
+2025-08-27 09:08:50 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 09:08:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-27 09:08:50 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-27 09:08:50 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2025-08-27 09:08:50 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:50 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui.html
+2025-08-27 09:08:50 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2025-08-27 09:08:50 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2025-08-27 09:08:50 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-08-27 09:08:50 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:50 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2025-08-27 09:08:50 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2025-08-27 09:08:50 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-08-27 09:08:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-08-27 09:08:50 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:50 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-08-27 09:08:50 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-08-27 09:08:50 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:50 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-08-27 09:08:52 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-08-27 09:08:52 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:52 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-08-27 09:08:52 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2025-08-27 09:08:52 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:52 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2025-08-27 09:08:52 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/public
+2025-08-27 09:08:52 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:08:52 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/public
+2025-08-27 09:08:54 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 2101 ms
+2025-08-27 09:09:55 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-08-27 09:09:55 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:09:55 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2025-08-27 09:09:56 [http-nio-8080-exec-5] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 704 ms
+2025-08-27 09:09:58 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /favicon.ico
+2025-08-27 09:09:58 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:09:58 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-27 09:09:58 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-08-27 09:09:58 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:09:58 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-08-27 09:11:22 [http-nio-8080-exec-9] INFO  c.s.s.controller.AuthController -  admin017 شروع فرایند لاگین برای کاربر 
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:11:22 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:11:22 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.UserServiceImpl - admin017: جستجوی کاربر با نام کاربری 
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: admin017
+2025-08-27 09:11:22 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:11:22 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:11:22 [http-nio-8080-exec-9] INFO  c.s.s.controller.AuthController -  کاربر admin017 با موفقیت وارد سیستم شد 
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups/members
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups/members
+2025-08-27 09:13:18 [http-nio-8080-exec-10] INFO  c.s.s.service.impl.GroupServiceImpl - 8 شروع دریافت اعضای گروه 
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG c.s.s.service.impl.GroupServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG c.s.s.service.impl.GroupServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:13:18 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:13:18 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-27 09:13:18 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [8]
+2025-08-27 09:13:18 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-27 09:13:18 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:13:18 [http-nio-8080-exec-10] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [8]
+2025-08-27 09:13:18 [http-nio-8080-exec-10] WARN  c.s.s.service.impl.GroupServiceImpl - کاربر 37 عضو گروه 8 نیست 
+2025-08-27 09:13:19 [http-nio-8080-exec-10] ERROR c.s.s.e.GlobalExceptionHandler - خطای امنیتی: شما عضو گروه نیستید  
+com.scheduleNetwork_version2.scheduleNetwork_version2.exception.SecurityException: شما عضو گروه نیستید  
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.GroupServiceImpl.getGroupMembers(GroupServiceImpl.java:263)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.GroupServiceImpl$$SpringCGLIB$$0.getGroupMembers(<generated>)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.controller.GroupController.getGroupMember(GroupController.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-27 09:13:19 [http-nio-8080-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.scheduleNetwork_version2.scheduleNetwork_version2.exception.SecurityException: شما عضو گروه نیستید  ]
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups/members
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups/members
+2025-08-27 09:13:30 [http-nio-8080-exec-1] INFO  c.s.s.service.impl.GroupServiceImpl - 9 شروع دریافت اعضای گروه 
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG c.s.s.service.impl.GroupServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG c.s.s.service.impl.GroupServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:13:30 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:13:30 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-27 09:13:30 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [9]
+2025-08-27 09:13:30 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-27 09:13:30 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:13:30 [http-nio-8080-exec-1] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [9]
+2025-08-27 09:13:30 [http-nio-8080-exec-1] WARN  c.s.s.service.impl.GroupServiceImpl - کاربر 37 عضو گروه 9 نیست 
+2025-08-27 09:13:30 [http-nio-8080-exec-1] ERROR c.s.s.e.GlobalExceptionHandler - خطای امنیتی: شما عضو گروه نیستید  
+com.scheduleNetwork_version2.scheduleNetwork_version2.exception.SecurityException: شما عضو گروه نیستید  
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.GroupServiceImpl.getGroupMembers(GroupServiceImpl.java:263)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.GroupServiceImpl$$SpringCGLIB$$0.getGroupMembers(<generated>)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.controller.GroupController.getGroupMember(GroupController.java:94)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-27 09:13:31 [http-nio-8080-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.scheduleNetwork_version2.scheduleNetwork_version2.exception.SecurityException: شما عضو گروه نیستید  ]
+2025-08-27 09:14:03 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups/my-group?page=0&size=10&sort=createdDate%2Cdesc
+2025-08-27 09:14:03 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups/my-group?page=0&size=10&sort=createdDate%2Cdesc
+2025-08-27 09:14:03 [http-nio-8080-exec-6] INFO  c.s.s.service.impl.GroupServiceImpl - شروع دریافت گروه‌های کاربر با صفحه‌بندی
+2025-08-27 09:14:03 [http-nio-8080-exec-6] DEBUG c.s.s.service.impl.GroupServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 09:14:03 [http-nio-8080-exec-6] DEBUG c.s.s.service.impl.GroupServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-27 09:14:03 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        distinct g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        group_member gm1_0 
+            on g1_0.id=gm1_0.group_table_id 
+    join
+        user_table u1_0 
+            on u1_0.id=gm1_0.user_table_id 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        u1_0.username=? 
+    order by
+        g1_0.created_date desc,
+        g1_0.created_date desc 
+    fetch
+        first ? rows only
+2025-08-27 09:14:03 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:14:03 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [10]
+2025-08-27 09:14:03 [http-nio-8080-exec-6] DEBUG c.s.s.service.impl.GroupServiceImpl - تعداد گروه‌های یافت‌شده برای کاربر admin017: 1
+2025-08-27 09:14:03 [http-nio-8080-exec-6] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups/members
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups/members
+2025-08-27 09:14:19 [http-nio-8080-exec-2] INFO  c.s.s.service.impl.GroupServiceImpl - 10 شروع دریافت اعضای گروه 
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG c.s.s.service.impl.GroupServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG c.s.s.service.impl.GroupServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [10]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        gm1_0.id,
+        gm1_0.group_table_id,
+        gm1_0.role_id,
+        gm1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        group_member gm1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=gm1_0.user_table_id 
+    where
+        gm1_0.group_table_id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.id,
+        r1_0.title 
+    from
+        role r1_0 
+    where
+        r1_0.id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.id,
+        r1_0.title 
+    from
+        role r1_0 
+    where
+        r1_0.id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [3]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:14:19 [http-nio-8080-exec-2] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 09:14:19 [http-nio-8080-exec-2] DEBUG c.s.s.service.impl.GroupServiceImpl -  10:2 تعداد اعضای یافت شده در گروه 
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/register
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/register
+2025-08-27 09:16:38 [http-nio-8080-exec-3] INFO  c.s.s.controller.AuthController -  string شروع فرایند ثبت نام با نام کاربری 
+2025-08-27 09:16:38 [http-nio-8080-exec-3] INFO  c.s.s.service.impl.UserServiceImpl - string: شروع ایجاد کاربر با نام کاربری 
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.title 
+    from
+        gender g1_0 
+    where
+        g1_0.id=?
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [1]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        st1_0.id,
+        st1_0.title 
+    from
+        schedule_type st1_0 
+    where
+        st1_0.title=?
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [private]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        user_table
+        (access_level_id, biography, birth_date, education, email, first_name, gender_id, last_name, password, phone_number, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [null]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [null]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-27]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:VARCHAR) <- [null]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:VARCHAR) <- [string]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:VARCHAR) <- [string]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:BIGINT) <- [1]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (8:VARCHAR) <- [string]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (9:VARCHAR) <- [$2a$10$Fl4G40ltyHxgv.ww2fewUeKyXGwB4lORwi2gcGWuL166ihhD7yWXq]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (10:VARCHAR) <- [string]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (11:VARCHAR) <- [string]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        schedule
+        (schedule_type_id, user_table_id) 
+    values
+        (?, ?)
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [2]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [38]
+2025-08-27 09:16:38 [http-nio-8080-exec-3] INFO  c.s.s.service.impl.UserServiceImpl -  کاربر با نام کاربری string با موفقیت ایجاد شد 
+2025-08-27 09:16:38 [http-nio-8080-exec-3] INFO  c.s.s.controller.AuthController -  کاربر با نام کاربری string با موفقیت ثبت نام شد 
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/user
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/user
+2025-08-27 09:17:13 [http-nio-8080-exec-8] INFO  c.s.s.service.impl.UserServiceImpl -  شروع جذف کاربر 
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG c.s.s.service.impl.UserServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG c.s.s.service.impl.UserServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: admin017
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        gm1_0.user_table_id,
+        gm1_0.id,
+        gm1_0.group_table_id,
+        gt1_0.id,
+        gt1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        gt1_0.created_date,
+        gt1_0.description,
+        gt1_0.group_name,
+        gm1_0.role_id,
+        r1_0.id,
+        r1_0.title 
+    from
+        group_member gm1_0 
+    left join
+        group_table gt1_0 
+            on gt1_0.id=gm1_0.group_table_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=gt1_0.access_level_id 
+    left join
+        role r1_0 
+            on r1_0.id=gm1_0.role_id 
+    where
+        gm1_0.user_table_id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        a1_0.schedule_id,
+        a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        g1_0.id,
+        g1_0.access_level_id,
+        al2_0.id,
+        al2_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name,
+        a1_0.location,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s2_0.id,
+        s2_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    left join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    left join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    left join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    left join
+        access_level al2_0 
+            on al2_0.id=g1_0.access_level_id 
+    left join
+        status s2_0 
+            on s2_0.id=a1_0.status_id 
+    left join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    where
+        a1_0.schedule_id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.user_table_id,
+        t1_0.id,
+        t1_0.end_date,
+        t1_0.end_time,
+        t1_0.group_table_id,
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name,
+        t1_0.start_date,
+        t1_0.start_time,
+        t1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        time t1_0 
+    left join
+        group_table g1_0 
+            on g1_0.id=t1_0.group_table_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    left join
+        week_day wd1_0 
+            on wd1_0.id=t1_0.week_day_id 
+    where
+        t1_0.user_table_id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] INFO  c.s.s.service.impl.UserServiceImpl -  کاربر با نام کاربری com.scheduleNetwork_version2.scheduleNetwork_version2.entity.User@62edc759 با موفقیت حذف شد 
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        group_member 
+    where
+        id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [28]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        activity 
+    where
+        id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [68]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        activity 
+    where
+        id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [71]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        activity 
+    where
+        id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [73]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        schedule 
+    where
+        id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 09:17:13 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    delete 
+    from
+        user_table 
+    where
+        id=?
+2025-08-27 09:17:13 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [37]
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-08-27 09:17:33 [http-nio-8080-exec-7] INFO  c.s.s.controller.AuthController -  string شروع فرایند لاگین برای کاربر 
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:17:33 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:17:33 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [38]
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG c.s.s.service.impl.UserServiceImpl - string: جستجوی کاربر با نام کاربری 
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: string
+2025-08-27 09:17:33 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:17:33 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:17:33 [http-nio-8080-exec-7] INFO  c.s.s.controller.AuthController -  کاربر string با موفقیت وارد سیستم شد 
+2025-08-27 09:18:14 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing DELETE /api/user
+2025-08-27 09:18:14 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured DELETE /api/user
+2025-08-27 09:18:14 [http-nio-8080-exec-9] INFO  c.s.s.service.impl.UserServiceImpl -  شروع جذف کاربر 
+2025-08-27 09:18:14 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.UserServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 09:18:14 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.UserServiceImpl - admin017: نام کاربری استخراج شده 
+2025-08-27 09:18:14 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: admin017
+2025-08-27 09:18:14 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:18:14 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin017]
+2025-08-27 09:18:14 [http-nio-8080-exec-9] ERROR c.s.s.service.impl.UserServiceImpl - کاربر با نام کاربری admin017 یافت نشد
+2025-08-27 09:18:14 [http-nio-8080-exec-9] ERROR c.s.s.e.GlobalExceptionHandler - خطای منبع یافت نشد: User با username: admin017 یافت نشد
+com.scheduleNetwork_version2.scheduleNetwork_version2.exception.ResourceNotFoundException: User با username: admin017 یافت نشد
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.UserServiceImpl.lambda$validateUser$0(UserServiceImpl.java:49)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.UserServiceImpl.validateUser(UserServiceImpl.java:47)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.UserServiceImpl.deleteUser(UserServiceImpl.java:143)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.service.impl.UserServiceImpl$$SpringCGLIB$$0.deleteUser(<generated>)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.controller.UserController.deleteUser(UserController.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-08-27 09:18:14 [http-nio-8080-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.scheduleNetwork_version2.scheduleNetwork_version2.exception.ResourceNotFoundException: User با username: admin017 یافت نشد]
+2025-08-27 09:18:41 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-08-27 09:18:41 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:18:41 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-08-27 09:18:41 [http-nio-8080-exec-4] INFO  c.s.s.controller.AuthController -  string شروع فرایند لاگین برای کاربر 
+2025-08-27 09:18:41 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:18:41 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:18:41 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:18:41 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [38]
+2025-08-27 09:18:42 [http-nio-8080-exec-4] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-08-27 09:18:42 [http-nio-8080-exec-4] DEBUG c.s.s.service.impl.UserServiceImpl - string: جستجوی کاربر با نام کاربری 
+2025-08-27 09:18:42 [http-nio-8080-exec-4] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: string
+2025-08-27 09:18:42 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:18:42 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:18:42 [http-nio-8080-exec-4] INFO  c.s.s.controller.AuthController -  کاربر string با موفقیت وارد سیستم شد 
+2025-08-27 09:19:36 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui.html
+2025-08-27 09:19:36 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:19:36 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui.html
+2025-08-27 09:19:37 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-08-27 09:19:37 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:19:37 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-08-27 09:19:38 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-08-27 09:19:38 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:19:38 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-08-27 09:19:39 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/public
+2025-08-27 09:19:39 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:19:39 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/public
+2025-08-27 09:20:01 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-08-27 09:20:01 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:20:01 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-08-27 09:20:01 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  string شروع فرایند لاگین برای کاربر 
+2025-08-27 09:20:01 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:20:01 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:20:01 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:20:01 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [38]
+2025-08-27 09:20:02 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-08-27 09:20:02 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - string: جستجوی کاربر با نام کاربری 
+2025-08-27 09:20:02 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: string
+2025-08-27 09:20:02 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:20:02 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:20:02 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  کاربر string با موفقیت وارد سیستم شد 
+2025-08-27 09:23:22 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/user/search?firstName=String&lastName=String
+2025-08-27 09:23:22 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:23:22 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/user/search?firstName=String&lastName=String
+2025-08-27 09:23:22 [http-nio-8080-exec-7] DEBUG c.s.s.service.impl.UserServiceImpl - Stringایمیل وStringنام خانوادگی وnullنام : شروع جستجوی کاربران با معیار ها 
+2025-08-27 09:23:22 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    where
+        u1_0.first_name=? 
+        and u1_0.last_name=?
+2025-08-27 09:23:22 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [String]
+2025-08-27 09:23:22 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [String]
+2025-08-27 09:24:49 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /api/user
+2025-08-27 09:24:49 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:24:49 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-27 09:24:49 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing PUT /error
+2025-08-27 09:24:49 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:24:49 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-27 09:45:43 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-27 09:45:43 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-27 09:45:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27 09:45:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-27 09:45:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-27 09:46:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-27 09:46:06 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Starting ScheduleNetworkVersion2Application using Java 21.0.3 with PID 4288 (C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2\target\classes started by Pc-Baran in C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2)
+2025-08-27 09:46:06 [restartedMain] DEBUG c.s.s.ScheduleNetworkVersion2Application - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-27 09:46:06 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-27 09:46:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-27 09:46:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-27 09:46:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-27 09:46:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 179 ms. Found 13 JPA repository interfaces.
+2025-08-27 09:46:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-27 09:46:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-27 09:46:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-27 09:46:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-27 09:46:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-27 09:46:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4083 ms
+2025-08-27 09:46:10 [restartedMain] DEBUG c.s.s.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-27 09:46:10 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-27 09:46:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-08-27 09:46:11 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-27 09:46:11 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-27 09:46:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-27 09:46:12 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16930c2d
+2025-08-27 09:46:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-27 09:46:12 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-27 09:46:12 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-27 09:46:14 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-27 09:46:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27 09:46:16 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-27 09:46:19 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-27 09:46:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-27 09:46:20 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-27 09:46:20 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-27 09:46:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-27 09:46:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-27 09:46:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-27 09:46:21 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Started ScheduleNetworkVersion2Application in 15.961 seconds (process running for 27.848)
+2025-08-27 09:46:21 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) 
+    from
+        role r1_0
+2025-08-27 09:47:09 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 09:47:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-27 09:47:09 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-27 09:47:09 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-08-27 09:47:09 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:47:09 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2025-08-27 09:47:09 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-08-27 09:47:09 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:47:09 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-08-27 09:47:11 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-08-27 09:47:11 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:47:11 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-08-27 09:47:11 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/public
+2025-08-27 09:47:11 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:47:11 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/public
+2025-08-27 09:47:13 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 2003 ms
+2025-08-27 09:47:35 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-08-27 09:47:35 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:47:35 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-08-27 09:47:36 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  string شروع فرایند لاگین برای کاربر 
+2025-08-27 09:47:36 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:47:36 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:47:36 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 09:47:36 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [38]
+2025-08-27 09:47:36 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-08-27 09:47:36 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - string: جستجوی کاربر با نام کاربری 
+2025-08-27 09:47:36 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: string
+2025-08-27 09:47:36 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 09:47:36 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [string]
+2025-08-27 09:47:36 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  کاربر string با موفقیت وارد سیستم شد 
+2025-08-27 09:48:11 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/user/search?firstName=String&lastName=String
+2025-08-27 09:48:11 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:48:11 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/user/search?firstName=String&lastName=String
+2025-08-27 09:48:11 [http-nio-8080-exec-6] DEBUG c.s.s.service.impl.UserServiceImpl - Stringایمیل وStringنام خانوادگی وnullنام : شروع جستجوی کاربران با معیار ها 
+2025-08-27 09:48:11 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    where
+        u1_0.first_name=? 
+        and u1_0.last_name=?
+2025-08-27 09:48:11 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [String]
+2025-08-27 09:48:11 [http-nio-8080-exec-6] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:VARCHAR) <- [String]
+2025-08-27 09:52:23 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/activity/personal
+2025-08-27 09:52:23 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:52:23 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-27 09:52:23 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /error
+2025-08-27 09:52:23 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 09:52:23 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-08-27 09:58:06 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-27 09:58:06 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-27 09:58:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27 09:58:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-27 09:58:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-27 10:41:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-27 10:41:38 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Starting ScheduleNetworkVersion2Application using Java 21.0.3 with PID 7940 (C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2\target\classes started by Pc-Baran in C:\Users\Pc-Baran\Desktop\software\scheduleNetwork-version2)
+2025-08-27 10:41:38 [restartedMain] DEBUG c.s.s.ScheduleNetworkVersion2Application - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-08-27 10:41:38 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - No active profile set, falling back to 1 default profile: "default"
+2025-08-27 10:41:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-27 10:41:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-27 10:41:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-27 10:41:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 211 ms. Found 13 JPA repository interfaces.
+2025-08-27 10:41:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-08-27 10:41:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-27 10:41:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-27 10:41:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-08-27 10:41:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-27 10:41:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4000 ms
+2025-08-27 10:41:42 [restartedMain] DEBUG c.s.s.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-08-27 10:41:43 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-27 10:41:43 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-08-27 10:41:43 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-27 10:41:43 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-27 10:41:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-27 10:41:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@22393451
+2025-08-27 10:41:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-27 10:41:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-27 10:41:44 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-27 10:41:46 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-27 10:41:47 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27 10:41:48 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-27 10:41:51 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-08-27 10:41:51 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-27 10:41:52 [restartedMain] DEBUG o.s.s.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-27 10:41:52 [restartedMain] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-08-27 10:41:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-27 10:41:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-27 10:41:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-08-27 10:41:52 [restartedMain] INFO  c.s.s.ScheduleNetworkVersion2Application - Started ScheduleNetworkVersion2Application in 15.361 seconds (process running for 16.28)
+2025-08-27 10:41:53 [restartedMain] DEBUG org.hibernate.SQL - 
+    select
+        count(*) 
+    from
+        role r1_0
+2025-08-27 10:42:10 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-27 10:42:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-27 10:42:10 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-08-27 10:42:10 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-08-27 10:42:11 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 10:42:11 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2025-08-27 10:42:11 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-08-27 10:42:11 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 10:42:11 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-08-27 10:42:13 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-08-27 10:42:13 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 10:42:13 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-08-27 10:42:13 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/public
+2025-08-27 10:42:13 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 10:42:13 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/public
+2025-08-27 10:42:15 [http-nio-8080-exec-4] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 1898 ms
+2025-08-27 10:42:41 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/auth/login
+2025-08-27 10:42:41 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-08-27 10:42:41 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/auth/login
+2025-08-27 10:42:41 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  admin016 شروع فرایند لاگین برای کاربر 
+2025-08-27 10:42:41 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 10:42:41 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin016]
+2025-08-27 10:42:41 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 10:42:41 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:42:42 [http-nio-8080-exec-5] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-08-27 10:42:42 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - admin016: جستجوی کاربر با نام کاربری 
+2025-08-27 10:42:42 [http-nio-8080-exec-5] DEBUG c.s.s.service.impl.UserServiceImpl - جستجوی کاربر با شناسه: admin016
+2025-08-27 10:42:42 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 10:42:42 [http-nio-8080-exec-5] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin016]
+2025-08-27 10:42:42 [http-nio-8080-exec-5] INFO  c.s.s.controller.AuthController -  کاربر admin016 با موفقیت وارد سیستم شد 
+2025-08-27 10:43:28 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/groups/my-group?page=0&size=10&sort=createdDate%2Cdesc
+2025-08-27 10:43:28 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/groups/my-group?page=0&size=10&sort=createdDate%2Cdesc
+2025-08-27 10:43:28 [http-nio-8080-exec-7] INFO  c.s.s.service.impl.GroupServiceImpl - شروع دریافت گروه‌های کاربر با صفحه‌بندی
+2025-08-27 10:43:28 [http-nio-8080-exec-7] DEBUG c.s.s.service.impl.GroupServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 10:43:28 [http-nio-8080-exec-7] DEBUG c.s.s.service.impl.GroupServiceImpl - admin016: نام کاربری استخراج شده 
+2025-08-27 10:43:28 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        distinct g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        group_member gm1_0 
+            on g1_0.id=gm1_0.group_table_id 
+    join
+        user_table u1_0 
+            on u1_0.id=gm1_0.user_table_id 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        u1_0.username=? 
+    order by
+        g1_0.created_date desc,
+        g1_0.created_date desc 
+    fetch
+        first ? rows only
+2025-08-27 10:43:28 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin016]
+2025-08-27 10:43:28 [http-nio-8080-exec-7] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:INTEGER) <- [10]
+2025-08-27 10:43:29 [http-nio-8080-exec-7] DEBUG c.s.s.service.impl.GroupServiceImpl - تعداد گروه‌های یافت‌شده برای کاربر admin016: 1
+2025-08-27 10:43:29 [http-nio-8080-exec-7] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/time/free-times
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/time/free-times
+2025-08-27 10:44:48 [http-nio-8080-exec-9] INFO  c.s.s.service.impl.TimeServiceImpl -  10 شروع دریافت زمان های خالی برای گروه 
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.TimeServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.TimeServiceImpl - admin016: نام کاربری استخراج شده 
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 10:44:48 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin016]
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 10:44:48 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-27 10:44:48 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-27 10:44:48 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:44:48 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [10]
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        t1_0.id,
+        t1_0.end_date,
+        t1_0.end_time,
+        t1_0.group_table_id,
+        t1_0.start_date,
+        t1_0.start_time,
+        t1_0.user_table_id,
+        t1_0.week_day_id 
+    from
+        time t1_0 
+    left join
+        group_table g1_0 
+            on g1_0.id=t1_0.group_table_id 
+    where
+        g1_0.id=?
+2025-08-27 10:44:48 [http-nio-8080-exec-9] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 10:44:48 [http-nio-8080-exec-9] DEBUG c.s.s.service.impl.TimeServiceImpl - 10:0 تعداد زمان های خالی یافت شده برای گروه 
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/personal/range?startDate=2025-07-01&endDate=2025-09-30
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/personal/range?startDate=2025-07-01&endDate=2025-09-30
+2025-08-27 10:45:47 [http-nio-8080-exec-8] INFO  c.s.s.s.impl.ActivityServiceImpl -  شروع دریافت فعالیت های شخصی 
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin016: نام کاربری استخراج شده 
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin016]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        a1_0.group_table_id,
+        a1_0.location,
+        s2_0.id,
+        s2_0.schedule_type_id,
+        s2_0.user_table_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        schedule s2_0 
+            on s2_0.id=a1_0.schedule_id 
+    where
+        s2_0.user_table_id=? 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and a1_0.end_date>=?
+            )
+        ) 
+    order by
+        wd1_0.id,
+        a1_0.start_time
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-07-01]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-09-30]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-07-01]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-09-30]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-07-01]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-09-30]
+2025-08-27 10:45:47 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-27 10:45:47 [http-nio-8080-exec-8] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 10:47:07 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/range?startDate=2025-07-01&endDate=2025-9-30
+2025-08-27 10:47:07 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/range?startDate=2025-07-01&endDate=2025-9-30
+2025-08-27 10:47:07 [http-nio-8080-exec-2] ERROR c.s.s.e.GlobalExceptionHandler - خطای عمومی: Method parameter 'endDate': Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-9-30]
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'endDate': Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-9-30]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:301)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-9-30]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:182)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:131)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:870)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:293)
+	... 101 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Parse attempt failed for value [2025-9-30]
+	at org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:223)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 107 common frames omitted
+Caused by: java.time.format.DateTimeParseException: Text '2025-9-30' could not be parsed at index 4
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:435)
+	at org.springframework.format.datetime.standard.TemporalAccessorParser.doParse(TemporalAccessorParser.java:133)
+	at org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:92)
+	at org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:56)
+	at org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:217)
+	... 108 common frames omitted
+2025-08-27 10:47:07 [http-nio-8080-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'endDate': Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-9-30]]
+2025-08-27 10:47:22 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/range?startDate=2025-07-01&endDate=2025-8-30
+2025-08-27 10:47:22 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/range?startDate=2025-07-01&endDate=2025-8-30
+2025-08-27 10:47:22 [http-nio-8080-exec-3] ERROR c.s.s.e.GlobalExceptionHandler - خطای عمومی: Method parameter 'endDate': Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-8-30]
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'endDate': Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-8-30]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:301)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:136)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:227)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:181)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.scheduleNetwork_version2.scheduleNetwork_version2.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-8-30]
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:47)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:182)
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:131)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:80)
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53)
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:870)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.convertIfNecessary(AbstractNamedValueMethodArgumentResolver.java:293)
+	... 101 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Parse attempt failed for value [2025-8-30]
+	at org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:223)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:41)
+	... 107 common frames omitted
+Caused by: java.time.format.DateTimeParseException: Text '2025-8-30' could not be parsed at index 4
+	at java.base/java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2108)
+	at java.base/java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:2010)
+	at java.base/java.time.LocalDate.parse(LocalDate.java:435)
+	at org.springframework.format.datetime.standard.TemporalAccessorParser.doParse(TemporalAccessorParser.java:133)
+	at org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:92)
+	at org.springframework.format.datetime.standard.TemporalAccessorParser.parse(TemporalAccessorParser.java:56)
+	at org.springframework.format.support.FormattingConversionService$ParserConverter.convert(FormattingConversionService.java:217)
+	... 108 common frames omitted
+2025-08-27 10:47:22 [http-nio-8080-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'endDate': Failed to convert value of type 'java.lang.String' to required type 'java.time.LocalDate'; Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.RequestParam java.time.LocalDate] for value [2025-8-30]]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/activity/group/range?startDate=2025-07-01&endDate=2025-08-30
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/activity/group/range?startDate=2025-07-01&endDate=2025-08-30
+2025-08-27 10:47:47 [http-nio-8080-exec-4] INFO  c.s.s.s.impl.ActivityServiceImpl - 10 شروع دریافت فعالیت های گروهی برای گروه 2025-07-01 از 2025-08-30 تا
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG c.s.s.s.impl.ActivityServiceImpl -  استخراج نام کاربری از توکن 
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG c.s.s.s.impl.ActivityServiceImpl - admin016: نام کاربری استخراج شده 
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        al1_0.id,
+        al1_0.title,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        g1_0.id,
+        g1_0.title,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.username 
+    from
+        user_table u1_0 
+    join
+        gender g1_0 
+            on g1_0.id=u1_0.gender_id 
+    left join
+        access_level al1_0 
+            on al1_0.id=u1_0.access_level_id 
+    where
+        u1_0.username=?
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:VARCHAR) <- [admin016]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        s1_0.id,
+        s1_0.schedule_type_id,
+        s1_0.user_table_id,
+        u1_0.id,
+        u1_0.access_level_id,
+        u1_0.biography,
+        u1_0.birth_date,
+        u1_0.education,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.gender_id,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.user_id,
+        r1_1.id,
+        r1_1.title,
+        u1_0.username 
+    from
+        schedule s1_0 
+    join
+        user_table u1_0 
+            on u1_0.id=s1_0.user_table_id 
+    left join
+        user_roles r1_0 
+            on u1_0.id=r1_0.user_id 
+    left join
+        role r1_1 
+            on r1_1.id=r1_0.role_id 
+    where
+        s1_0.user_table_id=?
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        g1_0.id,
+        g1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name 
+    from
+        group_table g1_0 
+    join
+        access_level al1_0 
+            on al1_0.id=g1_0.access_level_id 
+    where
+        g1_0.id=?
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        case 
+            when count(gm1_0.id)>0 
+                then true 
+            else false 
+    end 
+from
+    group_member gm1_0 
+where
+    gm1_0.user_table_id=? 
+    and gm1_0.group_table_id=?
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [36]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:BIGINT) <- [10]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        distinct a1_0.id,
+        a1_0.access_level_id,
+        al1_0.id,
+        al1_0.title,
+        a1_0.activity_type_id,
+        at1_0.id,
+        at1_0.title,
+        a1_0.description,
+        a1_0.end_date,
+        a1_0.end_time,
+        g1_0.id,
+        g1_0.access_level_id,
+        g1_0.created_date,
+        g1_0.description,
+        g1_0.group_name,
+        a1_0.location,
+        a1_0.schedule_id,
+        a1_0.start_date,
+        a1_0.start_time,
+        a1_0.status_id,
+        s1_0.id,
+        s1_0.title,
+        a1_0.title,
+        a1_0.week_day_id,
+        wd1_0.id,
+        wd1_0.title 
+    from
+        activity a1_0 
+    join
+        week_day wd1_0 
+            on wd1_0.id=a1_0.week_day_id 
+    join
+        status s1_0 
+            on s1_0.id=a1_0.status_id 
+    join
+        activity_type at1_0 
+            on at1_0.id=a1_0.activity_type_id 
+    join
+        access_level al1_0 
+            on al1_0.id=a1_0.access_level_id 
+    join
+        group_table g1_0 
+            on g1_0.id=a1_0.group_table_id 
+    where
+        g1_0.id=? 
+        and a1_0.schedule_id is null 
+        and (
+            a1_0.start_date between ? and ? 
+            or a1_0.end_date between ? and ? 
+            or (
+                a1_0.start_date<=? 
+                and (
+                    a1_0.end_date>=? 
+                    or a1_0.end_date is null
+                )
+            )
+        ) 
+    order by
+        wd1_0.id,
+        a1_0.start_time
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (1:BIGINT) <- [10]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (2:DATE) <- [2025-07-01]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (3:DATE) <- [2025-08-30]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (4:DATE) <- [2025-07-01]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (5:DATE) <- [2025-08-30]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (6:DATE) <- [2025-07-01]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] TRACE org.hibernate.orm.jdbc.bind - binding parameter (7:DATE) <- [2025-08-30]
+2025-08-27 10:47:47 [http-nio-8080-exec-4] DEBUG c.s.s.s.impl.ActivityServiceImpl - 2: تعداد فعایلت های گروهی یافت شده
+2025-08-27 10:50:24 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-27 10:50:24 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-27 10:50:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-27 10:50:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-27 10:50:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
